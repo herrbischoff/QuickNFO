@@ -1,23 +1,21 @@
-QuickNFO
-==================
+# QuickNFO
 
-Mac OSX QuickLook Plugin for previewing NFO files
+macOS QuickLook plugin for previewing NFO files.
 
-Uses libiconv to convert the nfo text to utf8 and then lets WebKit render the output. Seems to work well (at least for the few cases I have tested).
+Forked from the original repository since it was last updated in 2014. This is mainly done to distribute a current binary for easy use and to update the installation instructions. All credits go to the author [@planbnet](https://github.com/planbnet), I just cleaned up the surroundings a bit.
+
+Uses libiconv to convert the NFO text to UTF-8 and WebKit to render the output.
 
 The current version supports preview and thumbnail generation. Rendering with HiDPI, like on retina displays, is also supported.
 
-Installation
-==================
+## Installation
 
-Build the xcode project or download the [compiled plugin][download]. Then copy the file `QuickNFO.qlgenerator` to the path `Library/QuickLook` inside your home directory.
+Build the Xcode project or download the [compiled plugin](https://github.com/herrbischoff/QuickNFO/releases). Then copy the file `QuickNFO.qlgenerator` to `/Library/QuickLook`.
 
-[download]:https://github.com/planbnet/QuickNFO/raw/master/QuickNFO.qlgenerator.zip
+## Examples
 
-Examples
-==================
-###Thumbnails
-<img src="examples/thumbnails.png" alt="QuickLook Thumbnails" width="722" height="171"/>
+### Thumbnails
+<img src="examples/thumbnails.png" alt="QuickLook Thumbnails" width="722" height="171">
 
-###Preview
-<img src="examples/preview.png" alt="QuickLook Preview" width="606" height="817"/>
+### Preview
+<img src="examples/preview.png" alt="QuickLook Preview" width="606" height="817">
